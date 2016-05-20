@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1 Migration from and to Salesforce Instances
+  p Please input your Salesforce Credentials
+  h2 From Instances
+  .input-group
+    span#basic-addon1.input-group-addon @
+    input#id1.form-control(type='text', placeholder='Salesforce Username', aria-describedby='basic-addon1')
+  .input-group
+    span#basic-addon2.input-group-addon #
+    input#pwd1.form-control(type='password', placeholder="Password + Token", aria-describedby='basic-addon2')
+  select#server1.form-control
+      option(value='https://login.salesforce.com') Production
+      |   
+      option(value='https://test.salesforce.com') Sandbox
+
+  
+  button#submitBtn.btn.btn-warning(type=button) Retrieve Data
+  h2 Output Retrieve
+  textarea#output.col-md-12
+  h2 To Instances
+  .input-group
+    span#basic-addon1.input-group-addon @
+    input#id2.form-control(type='text', placeholder='Salesforce Username', aria-describedby='basic-addon1')
+  .input-group
+    span#basic-addon2.input-group-addon #
+    input#pwd2.form-control(type='password', placeholder="Password + Token", aria-describedby='basic-addon2')
+  select#server2.form-control
+    option(value='https://login.salesforce.com') Production
+    |   
+    option(value='https://test.salesforce.com') Sandbox
+
+  p(style='margin-top:40px') *) for demo purpose only
+  button#migrate.btn.btn-warning(type=button) Migrate
+  h2 Output Migrate
+  textarea#output2.col-md-12

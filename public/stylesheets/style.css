@@ -1,0 +1,21 @@
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+#output, #output2{
+  height: 200px;
+  width : 100%;
+  background-color:#eee;
+  overflow-y: scroll;
+  color : #222;
+}
+
+.input-group{
+  margin: 10px auto;
+}
